@@ -7,6 +7,70 @@
 .contact-form {
   padding-top: 20px;
 
+  /* Match dark theme: transparent inputs, white text */
+  .MuiFormControl-root {
+    color: white;
+  }
+
+  .MuiInputLabel-root {
+    color: rgba(255,255,255,0.85);
+  }
+  .MuiInputLabel-root.Mui-focused {
+    color: #cfc6ff;
+  }
+
+  .MuiOutlinedInput-root {
+    background: rgba(255,255,255,0.08) !important; /* subtle dark card for inputs */
+    color: white;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255,255,255,0.3);
+  }
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255,255,255,0.5);
+  }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #cfc6ff;
+  }
+
+  .MuiInputBase-input,
+  .MuiInputBase-inputMultiline {
+    color: white !important;
+    -webkit-text-fill-color: white !important; /* Safari/Chrome */
+    background: transparent !important;
+    caret-color: white;
+  }
+  .MuiInputBase-input::placeholder {
+    color: rgba(255,255,255,0.7) !important;
+    opacity: 1;
+  }
+
+  .MuiFormHelperText-root {
+    color: rgba(255,255,255,0.75) !important;
+  }
+
+  /* Force autofill to respect dark text color and transparent bg */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: white !important;
+    caret-color: white !important;
+    /* Paint autofill background to match dark theme */
+    box-shadow: 0 0 0px 1000px #0d1116 inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px #0d1116 inset !important;
+    filter: none !important;
+    transition: background-color 9999s ease-in-out 0s !important;
+  }
+
+  /* Prevent white background from fieldset default */
+  fieldset {
+    background: transparent !important;
+  }
+
   button {
     float: right;
     background-color: white;
@@ -17,9 +81,76 @@
     background-color: #5000ca;
     color: white;
   }
+}
 
-  fieldset {
-    background-color: white;
+/* Revert contact container to inherit global dark styling */
+#contact {
+  .items-container {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 5% 10%;
+  }
+}
+
+/* Light mode overrides: ensure inputs are visible on light background */
+.light-mode {
+  #contact {
+    .items-container {
+      background-color: transparent;
+    }
+
+    .contact-form {
+      .MuiFormControl-root {
+        color: #0d1116;
+      }
+
+      .MuiInputLabel-root {
+        color: #6b7280;
+      }
+      .MuiInputLabel-root.Mui-focused {
+        color: #5000ca;
+      }
+
+      .MuiOutlinedInput-root {
+        background: #ffffff !important;
+        color: #0d1116;
+      }
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #d1d5db;
+      }
+      .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border-color: #9ca3af;
+      }
+      .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #5000ca;
+      }
+
+      .MuiInputBase-input,
+      .MuiInputBase-inputMultiline {
+        color: #0d1116 !important;
+        -webkit-text-fill-color: #0d1116 !important;
+        background: #ffffff !important;
+        caret-color: #0d1116;
+      }
+      .MuiInputBase-input::placeholder {
+        color: #9ca3af !important;
+        opacity: 1;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus {
+        -webkit-text-fill-color: #0d1116 !important;
+        caret-color: #0d1116 !important;
+        box-shadow: 0 0 0px 1000px #ffffff inset !important;
+        -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+        transition: background-color 9999s ease-in-out 0s !important;
+      }
+    }
   }
 }
 
@@ -45,4 +176,21 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+/* Ensure input text is visible only within the Contact form */
+.contact-form {
+  .MuiInputBase-input,
+  .MuiInputBase-inputMultiline {
+    color: #0d1116 !important; /* dark text */
+  }
+
+  .MuiInputBase-input::placeholder {
+    color: #6b7280 !important; /* subtle placeholder */
+    opacity: 1;
+  }
+
+  .MuiOutlinedInput-root {
+    background-color: #ffffff; /* keep white input bg */
+  }
 }

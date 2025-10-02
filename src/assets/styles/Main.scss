@@ -47,6 +47,15 @@
         margin-block-start: 0px;
         margin-block-end: 0px;
     }
+    
+    .professional-summary {
+        margin-top: 8px;
+        
+        p {
+            font-size: 1.2em; /* smaller than the position title paragraph */
+            line-height: 1.4;
+        }
+    }
 }
 
 .about-section .image-wrapper {

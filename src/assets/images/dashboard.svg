@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Data Analytics Dashboard Illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f7ff"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fafafa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <rect x="60" y="48" width="1080" height="64" rx="12" fill="#ffffff" stroke="#e6e8f0"/>
+  <rect x="84" y="70" width="180" height="20" rx="6" fill="#dfe3f6"/>
+  <rect x="1000" y="66" width="112" height="28" rx="8" fill="#5000ca" opacity="0.9"/>
+  <rect x="890" y="66" width="96" height="28" rx="8" fill="#cfd6ff"/>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="60" y="140" width="260" height="120" rx="14" fill="url(#card)" stroke="#e6e8f0"/>
+    <rect x="84" y="164" width="120" height="16" rx="6" fill="#98a2ff"/>
+    <rect x="84" y="194" width="72" height="32" rx="8" fill="#141b34" opacity="0.9"/>
+    <rect x="170" y="202" width="104" height="16" rx="6" fill="#e9ecff"/>
+  </g>
+  <g>
+    <rect x="340" y="140" width="260" height="120" rx="14" fill="url(#card)" stroke="#e6e8f0"/>
+    <rect x="364" y="164" width="140" height="16" rx="6" fill="#98a2ff"/>
+    <rect x="364" y="194" width="92" height="32" rx="8" fill="#141b34" opacity="0.9"/>
+    <rect x="470" y="202" width="104" height="16" rx="6" fill="#e9ecff"/>
+  </g>
+  <g>
+    <rect x="620" y="140" width="260" height="120" rx="14" fill="url(#card)" stroke="#e6e8f0"/>
+    <rect x="644" y="164" width="120" height="16" rx="6" fill="#98a2ff"/>
+    <rect x="644" y="194" width="72" height="32" rx="8" fill="#141b34" opacity="0.9"/>
+    <rect x="730" y="202" width="104" height="16" rx="6" fill="#e9ecff"/>
+  </g>
+  <g>
+    <rect x="900" y="140" width="240" height="120" rx="14" fill="url(#card)" stroke="#e6e8f0"/>
+    <rect x="924" y="164" width="132" height="16" rx="6" fill="#98a2ff"/>
+    <rect x="924" y="194" width="88" height="32" rx="8" fill="#141b34" opacity="0.9"/>
+    <rect x="1028" y="202" width="92" height="16" rx="6" fill="#e9ecff"/>
+  </g>
+
+  <!-- Left: Bar chart -->
+  <rect x="60" y="284" width="560" height="300" rx="16" fill="url(#card)" stroke="#e6e8f0"/>
+  <rect x="92" y="316" width="120" height="20" rx="6" fill="#cfd6ff"/>
+  <g fill="#5000ca">
+    <rect x="120" y="520" width="36" height="48" rx="6"/>
+    <rect x="200" y="488" width="36" height="80" rx="6" opacity="0.9"/>
+    <rect x="280" y="456" width="36" height="112" rx="6" opacity="0.8"/>
+    <rect x="360" y="412" width="36" height="156" rx="6" opacity="0.75"/>
+    <rect x="440" y="372" width="36" height="196" rx="6" opacity="0.7"/>
+  </g>
+  <g fill="#e9ecff">
+    <rect x="120" y="572" width="36" height="8" rx="4"/>
+    <rect x="200" y="572" width="36" height="8" rx="4"/>
+    <rect x="280" y="572" width="36" height="8" rx="4"/>
+    <rect x="360" y="572" width="36" height="8" rx="4"/>
+    <rect x="440" y="572" width="36" height="8" rx="4"/>
+  </g>
+
+  <!-- Right: Line chart -->
+  <rect x="640" y="284" width="500" height="300" rx="16" fill="url(#card)" stroke="#e6e8f0"/>
+  <rect x="672" y="316" width="160" height="20" rx="6" fill="#cfd6ff"/>
+  <polyline fill="none" stroke="#5000ca" stroke-width="6" stroke-linecap="round" points="680,520 740,460 800,490 860,420 920,448 980,380 1080,440"/>
+  <g fill="#5000ca">
+    <circle cx="740" cy="460" r="6"/>
+    <circle cx="800" cy="490" r="6"/>
+    <circle cx="860" cy="420" r="6"/>
+    <circle cx="920" cy="448" r="6"/>
+    <circle cx="980" cy="380" r="6"/>
+    <circle cx="1080" cy="440" r="6"/>
+  </g>
+
+  <!-- Legend -->
+  <rect x="980" y="316" width="128" height="28" rx="8" fill="#f1f3ff" stroke="#e6e8f0"/>
+  <circle cx="998" cy="330" r="6" fill="#5000ca"/>
+  <rect x="1012" y="322" width="88" height="16" rx="6" fill="#cfd6ff"/>
+
+  <!-- Footer hint -->
+  <rect x="480" y="616" width="240" height="14" rx="7" fill="#dfe3f6"/>
+</svg>
+
+
