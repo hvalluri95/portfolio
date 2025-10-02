@@ -1,4 +1,4 @@
-# Harini Valluri — Personal Portfolio
+# Harini Valluri — Portfolio
 
 Modern, responsive portfolio showcasing my work, skills, and experience as a Senior Data Analyst.
 
@@ -24,20 +24,6 @@ npm install
 npm start
 ```
 Open http://localhost:3000
-
-## Configure EmailJS (optional)
-
-1) Create a free EmailJS account and connect an email service.
-2) Create a template with variables: `from_name`, `from_email`, `message`.
-3) Add keys in `.env` or use in-code placeholders in `Contact.tsx`.
-
-## Customize
-
-- Name/title/summary: `src/components/Main.tsx`
-- Skills & icons: `src/components/Expertise.tsx`
-- Timeline: `src/components/Timeline.tsx`
-- Project: `src/components/Project.tsx`
-- Styles: `src/assets/styles/*.scss`
 
 ## Contact
 
