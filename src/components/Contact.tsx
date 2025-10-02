@@ -55,9 +55,13 @@ function Contact() {
         const mod: any = await import('@emailjs/browser');
         const emailjs = mod.default || mod;
 
-        const serviceId = 'harini_portfolio';
-        const templateId = '__ejs-test-mail-service__';
-        const publicKey = 'Kr3_wQXE48R4uSsdt';
+        const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID as string;
+        const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string;
+        const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY as string;
+
+        if (!serviceId || !templateId || !publicKey) {
+          throw new Error('Missing EmailJS config');
+        }
 
         const templateParams = {
           from_name: name,
