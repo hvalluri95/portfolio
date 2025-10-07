@@ -1,7 +1,6 @@
 # Harini Valluri — Portfolio
 
-Modern, responsive portfolio showcasing my work, skills, and experience as a Senior Analyst.
-Portfolio Link: https://harinivalluri.netlify.app
+Modern, responsive portfolio showcasing my work, skills, and experience as a Senior Analyst: https://harinivalluri.netlify.app
 
 ## Highlights
 
